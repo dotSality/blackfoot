@@ -1,0 +1,33 @@
+@import '@sass/variables';
+
+.v-popper--has-tooltip {
+  cursor: pointer;
+}
+
+.v-popper__inner {
+  border-radius: 10px !important;
+  background-color: $color-dark-common-black !important;
+  color: $color-dark-common-white !important;
+  box-shadow: $shadow-medium !important;
+  padding: 12px 15px !important;
+  max-width: 300px;
+}
+
+.v-popper__arrow-outer {
+  border-color: $color-dark-common-black !important;
+  border-width: 8px !important;
+  left: -3px !important;
+}
+
+.tooltip-title {
+  font: $l-small-600;
+  display: block;
+  color: $color-dark-common-white;
+}
+
+.tooltip-subtitle {
+  font: $l-small-400;
+  display: block;
+  margin-top: 5px;
+  color: $color-dark-common-white;
+}

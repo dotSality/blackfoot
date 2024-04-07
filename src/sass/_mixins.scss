@@ -1,0 +1,53 @@
+@import '@sass/variables';
+
+// overlines
+
+@mixin p-overline {
+  font: $p-overline;
+  text-transform: uppercase;
+}
+
+@mixin p-overline-small {
+  font: $p-overline-small;
+  text-transform: uppercase;
+}
+
+@mixin g-layout($colCount, $type) {
+  $gap: 20px;
+  $sideMargin: 0;
+  @if $type == 'small' {
+    $gap: 12px;
+    $sideMargin: 16px;
+  }
+  @else if $type == 'medium' {
+    $sideMargin: 32px;
+  }
+  @else if $type == 'large' {
+    $sideMargin: 114px;
+  }
+
+  display: grid;
+  grid-template-columns: repeat($colCount, 1fr);
+  grid-template-rows: 1fr;
+  gap: $gap;
+  margin: 0 auto;
+  max-width: calc(100% - $sideMargin * 2);
+}
+
+// fluid containers
+
+@mixin c-fluid-layout ($colCount) {
+  $gap: 24px;
+  $sideMargin: 24px;
+  @if $colCount < 5 {
+    $gap: 16px;
+    $sideMargin: 16px;
+  }
+
+  display: grid;
+  grid-template-columns: repeat($colCount, 1fr);
+  grid-template-rows: 1fr;
+  gap: $gap;
+  margin: 0 auto;
+  max-width: calc(100% - $sideMargin * 2);
+}
