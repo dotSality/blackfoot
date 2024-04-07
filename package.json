@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "deploy": "gh-pages -d build"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "chart.js": "^4.4.1",
