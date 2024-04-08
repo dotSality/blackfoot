@@ -36,20 +36,21 @@ import {
   ref,
   watch,
 } from 'vue';
+import { APP_ROUTES } from '@constants';
 
 const links = [
   {
-    path: '/biome',
+    path: APP_ROUTES.BIOME_PAGE,
     title: 'What\'s in her gut',
     subtitle: 'Microbiome profile',
   },
   {
-    path: '/meaning',
+    path: APP_ROUTES.MEANING_PAGE,
     title: 'What it means',
     subtitle: 'Bacteria insights',
   },
   {
-    path: '/advice',
+    path: APP_ROUTES.RECOMMENDATION_PAGE,
     title: 'What you can do',
     subtitle: 'Dietary recommendations',
   },

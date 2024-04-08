@@ -118,7 +118,7 @@ const showMoreHandler = () => isShowMore.value = !isShowMore.value;
   font: $p-medium-400;
   display: grid;
   overflow: hidden;
-  grid-template-rows: 0.4fr;
+  grid-template-rows: 0.35fr;
   transition: grid-template-rows .3s $tra-cubic;
 
   &_opened {
