@@ -14,7 +14,6 @@
           :key="link.path"
           :ref="(el) => linkRefs[link.id] = el"
           class="app-header-links__link"
-          :class="{ 'app-header-links__link_active': false/*$route.path === link.path*/ }"
           :href="'#' + link.id"
         >
           <span class="app-header-links__link_title">
