@@ -57,6 +57,8 @@ const mockDietaryParticularData = computed(() => MOCK_DIETARY_PARTICULAR_DATA);
   &__title {
     color: $color-light-text-disabled;
     font: $p-large-500;
+    margin-bottom: $spacing-big;
+    display: inline-block;
   }
 }
 </style>
