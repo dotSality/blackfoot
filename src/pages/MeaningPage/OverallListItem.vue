@@ -21,7 +21,9 @@
         :class="{ 'overall-side-group-list-item-info-hidden_opened': isHiddenOpened }"
       >
         <div class="overall-side-group-list-item-info-hidden__wrapper">
-          {{ item.hiddenText }}
+          <div class="overall-side-group-list-item-info-hidden__text">
+            {{ item.hiddenText }}
+          </div>
         </div>
       </div>
     </div>
@@ -60,8 +62,7 @@ const toggleIsOpened = () => {
   display: grid;
   grid-template-columns: 6fr 7fr auto;
   gap: 0 $spacing-xx-big;
-  padding: $spacing-x-big;
-  padding-right: $spacing-xxx-big;
+  padding: $spacing-x-big $spacing-xxx-big $spacing-x-big $spacing-x-big;
   border-top: 1px solid $color-light-other-divider;
   cursor: pointer;
   user-select: none;
@@ -94,10 +95,9 @@ const toggleIsOpened = () => {
 }
 
 .overall-side-group-list-item-info-hidden {
-  margin-top: 20px;
   display: grid;
   overflow: hidden;
-  grid-template-rows: 0;
+  grid-template-rows: 0fr;
   transition: grid-template-rows .3s $tra-cubic;
 
   &_opened {
@@ -106,6 +106,10 @@ const toggleIsOpened = () => {
 
   &__wrapper {
     min-height: 0;
+  }
+
+  &__text {
+    padding-top: 20px;
   }
 }
 </style>

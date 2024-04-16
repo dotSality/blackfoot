@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-
 import RecommendationBreakdown from '@pages/RecomendationPage/RecommendationBreakdown.vue';
 import DietarySide from '@pages/RecomendationPage/DietarySide.vue';
 </script>

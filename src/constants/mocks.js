@@ -536,3 +536,295 @@ export const mockOverallData = [
     ],
   },
 ];
+
+export const MOCK_DIETARY_DATA = [
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'include',
+        cells: [
+          {
+            name: 'Probiotic-rich foods',
+            goods: [
+              'Yogurt',
+              'Kefir',
+            ],
+          },
+          {
+            name: 'Fermented foods',
+            goods: [
+              'Sauerkraut',
+              'Kimchi',
+              'Miso',
+              'Tempeh',
+            ],
+          },
+          {
+            name: 'High-fibre vegetables',
+            goods: [
+              'Broccoli',
+              'Carrots',
+              'Sweet potatoes',
+              'Spinach',
+              'Kale',
+            ],
+          },
+        ],
+      },
+      {
+        title: 'avoid',
+        cells: [
+          {
+            name: 'Probiotic-rich foods',
+            goods: [
+              'Yogurt',
+              'Kefir',
+            ],
+          },
+          {
+            name: 'High-fibre vegetables',
+            goods: [
+              'Broccoli',
+              'Carrots',
+              'Sweet potatoes',
+              'Spinach',
+              'Kale',
+            ],
+          },
+          {
+            name: 'Fermented foods',
+            goods: [
+              'Sauerkraut',
+              'Kimchi',
+              'Miso',
+              'Tempeh',
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'Probiotic-rich foods',
+        cells: [
+          'Yogurt',
+          'Kefir',
+        ],
+      },
+      {
+        title: 'High-fibre vegetables',
+        cells: [
+          'Broccoli',
+          'Carrots',
+          'Sweet potatoes',
+          'Spinach',
+          'Kale',
+        ],
+      },
+      {
+        title: 'Fermented foods',
+        cells: [
+          'Sauerkraut',
+          'Kimchi',
+          'Miso',
+          'Tempeh',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'Probiotic-rich foods',
+        cells: [
+          'Yogurt',
+          'Kefir',
+        ],
+      },
+      {
+        title: 'High-fibre vegetables',
+        cells: [
+          'Broccoli',
+          'Carrots',
+          'Sweet potatoes',
+          'Spinach',
+          'Kale',
+        ],
+      },
+      {
+        title: 'Fermented foods',
+        cells: [
+          'Sauerkraut',
+          'Kimchi',
+          'Miso',
+          'Tempeh',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'Probiotic-rich foods',
+        cells: [
+          'Yogurt',
+          'Kefir',
+        ],
+      },
+      {
+        title: 'High-fibre vegetables',
+        cells: [
+          'Broccoli',
+          'Carrots',
+          'Sweet potatoes',
+          'Spinach',
+          'Kale',
+        ],
+      },
+      {
+        title: 'Fermented foods',
+        cells: [
+          'Sauerkraut',
+          'Kimchi',
+          'Miso',
+          'Tempeh',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'Probiotic-rich foods',
+        cells: [
+          'Yogurt',
+          'Kefir',
+        ],
+      },
+      {
+        title: 'High-fibre vegetables',
+        cells: [
+          'Broccoli',
+          'Carrots',
+          'Sweet potatoes',
+          'Spinach',
+          'Kale',
+        ],
+      },
+      {
+        title: 'Fermented foods',
+        cells: [
+          'Sauerkraut',
+          'Kimchi',
+          'Miso',
+          'Tempeh',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Fusobacteria',
+    tooltipData: {
+      title: 'Alpha diversity',
+      subtitle: 'This refers to the variety of ' +
+        'bacterial species within a gut microbiome, measuring both richness and ' +
+        'evenness. Higher alpha diversity typically indicates better health.',
+    },
+    description: 'Princess Peach\'s elevated Fusobacteria levels suggest a need to ' +
+      'balance gut flora. Include probiotic-rich foods, high-fiber vegetables, and ' +
+      'fermented foods in her diet. Avoid excessive red meat, high-fat dairy products, processed foods.',
+    dataRows: [
+      {
+        title: 'Probiotic-rich foods',
+        cells: [
+          'Yogurt',
+          'Kefir',
+        ],
+      },
+      {
+        title: 'High-fibre vegetables',
+        cells: [
+          'Broccoli',
+          'Carrots',
+          'Sweet potatoes',
+          'Spinach',
+          'Kale',
+        ],
+      },
+      {
+        title: 'Fermented foods',
+        cells: [
+          'Sauerkraut',
+          'Kimchi',
+          'Miso',
+          'Tempeh',
+        ],
+      },
+    ],
+  },
+];
+
+export const MOCK_DIETARY_PARTICULAR_DATA = [
+  {
+    name: 'Vitamin D',
+    description: 'Ensure Princess Peach gets adequate sunlight for natural Vitamin D synthesis' +
+      ', vital for bone health and immune function. Regular outdoor walks can be beneficial.',
+  },
+  {
+    name: 'Exercise',
+    description: 'Regular physical activity can enhance her digestive efficiency and overall ' +
+      'well-being. Consider daily walks, play sessions, or agility training.',
+  },
+];

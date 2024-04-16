@@ -25,8 +25,7 @@ import MicrobiomeStripesSide from '@pages/BiomePage/MicrobiomeStripesSide.vue';
 .biome-page {
   width: 100%;
   min-height: 100%;
-  margin: $spacing-x-lg 0 0;
-  padding-bottom: $spacing-xxx-lg;
+  padding: $spacing-x-lg 0 $spacing-xxx-lg 0;
   display: flex;
   flex-direction: column;
   gap: $spacing-x-lg;

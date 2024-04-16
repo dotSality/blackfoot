@@ -1,5 +1,8 @@
 <template>
-  <div class="app-header">
+  <div
+    class="app-header"
+    :class="{ 'app-header_hidden': isHeaderHidden }"
+  >
     <div class="app-header-wrapper">
       <div
         class="app-header-wrapper__pointer"
@@ -32,6 +35,8 @@
 <script setup>
 import { useRoute } from 'vue-router';
 import {
+  onMounted,
+  onUnmounted,
   reactive,
   ref,
   watch,
@@ -63,12 +68,38 @@ const pointer = reactive({
   width: '0',
 });
 const linkRefs = ref({});
+const isHeaderHidden = ref(true);
+const hidingTimeoutId = ref(null);
 
 watch(() => route.path, (path) => {
   const linkEl = linkRefs.value[path].$el;
   const rect = linkEl.getBoundingClientRect();
   pointer.transform = `translateX(${linkEl.offsetLeft}px)`;
   pointer.width = `${rect.width}px`;
+});
+
+const onScrollHandler = () => {
+  isHeaderHidden.value = false;
+  if (hidingTimeoutId.value) {
+    clearTimeout(hidingTimeoutId.value);
+    hidingTimeoutId.value = null;
+  }
+  if (window.scrollY === 0) {
+    isHeaderHidden.value = true;
+  } else {
+    hidingTimeoutId.value = setTimeout(() => {
+      isHeaderHidden.value = true;
+      hidingTimeoutId.value = null;
+    }, 3000);
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', onScrollHandler);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScrollHandler);
 });
 </script>
 
@@ -78,11 +109,17 @@ watch(() => route.path, (path) => {
 .app-header {
   width: 100%;
   height: 112px;
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 0 $m-desktop;
   z-index: 2;
   background-color: $color-light-common-black;
+  transform: translateY(0);
+  transition: transform .3s $tra-cubic;
+
+  &_hidden {
+    transform: translateY(-100%);
+  }
 
   &-wrapper {
     position: relative;
