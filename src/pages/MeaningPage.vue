@@ -1,5 +1,8 @@
 <template>
-  <div class="meaning-page">
+  <div
+    id="meaning"
+    class="meaning-page"
+  >
     <div class="meaning-page-wrapper">
       <BreakdownSide />
       <OverallSide />

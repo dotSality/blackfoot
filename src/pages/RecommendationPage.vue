@@ -1,5 +1,8 @@
 <template>
-  <div class="recommendation-page">
+  <div
+    id="recommendation"
+    class="recommendation-page"
+  >
     <div class="recommendation-page__wrapper">
       <RecommendationBreakdown />
       <DietarySide />

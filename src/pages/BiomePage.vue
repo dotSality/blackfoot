@@ -1,5 +1,8 @@
 <template>
-  <div class="biome-page">
+  <div
+    id="biome"
+    class="biome-page"
+  >
     <div class="biome-page-wrapper">
       <ReportSide />
       <GraphSide />

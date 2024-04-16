@@ -9,13 +9,13 @@
         :style="pointer"
       />
       <div class="app-header-links">
-        <router-link
+        <a
           v-for="link in links"
           :key="link.path"
-          :ref="(el) => linkRefs[link.path] = el"
+          :ref="(el) => linkRefs[link.id] = el"
           class="app-header-links__link"
-          :class="{ 'app-header-links__link_active': $route.path === link.path }"
-          :to="link.path"
+          :class="{ 'app-header-links__link_active': false/*$route.path === link.path*/ }"
+          :href="'#' + link.id"
         >
           <span class="app-header-links__link_title">
             {{ link.title }}
@@ -23,7 +23,7 @@
           <span class="app-header-links__link_subtitle">
             {{ link.subtitle }}
           </span>
-        </router-link>
+        </a>
       </div>
       <div class="app-header__link">
         Book a consultation
@@ -33,35 +33,37 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
 import {
+  computed,
+  nextTick,
   onMounted,
   onUnmounted,
   reactive,
   ref,
-  watch,
 } from 'vue';
-import { APP_ROUTES } from '@constants';
 
 const links = [
   {
-    path: APP_ROUTES.BIOME_PAGE,
+    id: 'biome',
     title: 'What\'s in her gut',
     subtitle: 'Microbiome profile',
   },
   {
-    path: APP_ROUTES.MEANING_PAGE,
+    id: 'meaning',
     title: 'What it means',
     subtitle: 'Bacteria insights',
   },
   {
-    path: APP_ROUTES.RECOMMENDATION_PAGE,
+    id: 'recommendation',
     title: 'What you can do',
     subtitle: 'Dietary recommendations',
   },
 ];
 
-const route = useRoute();
+const intersectingElements = computed(() => links
+  .map((link) => document.getElementById(link.id)));
+
+const intersectionObserver = ref(null);
 
 const pointer = reactive({
   transform: 'none',
@@ -70,13 +72,6 @@ const pointer = reactive({
 const linkRefs = ref({});
 const isHeaderHidden = ref(true);
 const hidingTimeoutId = ref(null);
-
-watch(() => route.path, (path) => {
-  const linkEl = linkRefs.value[path].$el;
-  const rect = linkEl.getBoundingClientRect();
-  pointer.transform = `translateX(${linkEl.offsetLeft}px)`;
-  pointer.width = `${rect.width}px`;
-});
 
 const onScrollHandler = () => {
   isHeaderHidden.value = false;
@@ -96,6 +91,22 @@ const onScrollHandler = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', onScrollHandler);
+  nextTick(() => {
+    intersectionObserver.value = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        const { target: { id } } = entry;
+        const linkEl = linkRefs.value[id];
+        const rect = linkEl.getBoundingClientRect();
+        pointer.transform = `translateX(${linkEl.offsetLeft}px)`;
+        pointer.width = `${rect.width}px`;
+      },
+      { threshold: 0.2 },
+    );
+    intersectingElements.value.forEach((el) => {
+      intersectionObserver.value.observe(el);
+    });
+  });
 });
 
 onUnmounted(() => {
