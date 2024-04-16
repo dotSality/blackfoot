@@ -226,9 +226,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 1.9,
@@ -244,9 +260,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 77.2,
@@ -262,9 +294,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
     ],
   },
@@ -285,9 +333,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 77.2,
@@ -303,9 +367,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 40.5,
@@ -321,9 +401,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 77.2,
@@ -339,9 +435,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
     ],
   },
@@ -362,9 +474,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 77.2,
@@ -380,9 +508,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 77.2,
@@ -398,9 +542,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 40.5,
@@ -416,9 +576,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
     ],
   },
@@ -439,9 +615,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 40.5,
@@ -457,9 +649,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 1.9,
@@ -475,9 +683,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 1.9,
@@ -493,9 +717,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 40.5,
@@ -511,9 +751,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
       {
         value: 40.5,
@@ -529,9 +785,25 @@ export const mockOverallData = [
         mainText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
           'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
           'overall health in pets.',
-        hiddenText: 'Princess Peach\'s alpha diversity score is high, indicating a healthy ' +
-          'variety in her gut bacteria. This diversity is key, as it\'s linked to better ' +
-          'overall health in pets.',
+        hidden: [
+          {
+            title: 'What does this mean?',
+            text: 'Her gut-brain axis, the communication pathway between the gut and the ' +
+              'brain, appears to be functioning well. This suggests effective management of ' +
+              'nutrients that support cognitive and neurological health.',
+          },
+          {
+            title: 'Why should I care?',
+            text: 'A healthy gut-brain connection is essential for mental sharpness, mood ' +
+              'regulation, and overall neurological health. It plays a crucial role in her' +
+              ' daily behavior and long-term cognitive abilities.',
+          },
+          {
+            title: 'Recommendation',
+            text: 'Continue providing a balanced diet that supports brain health, rich in ' +
+              'omega-3 fatty acids, antioxidants, and vitamins.',
+          },
+        ],
       },
     ],
   },

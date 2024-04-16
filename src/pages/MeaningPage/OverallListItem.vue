@@ -22,7 +22,18 @@
       >
         <div class="overall-side-group-list-item-info-hidden__wrapper">
           <div class="overall-side-group-list-item-info-hidden__text">
-            {{ item.hiddenText }}
+            <div
+              v-for="block in item.hidden"
+              :key="block.title"
+              class="overall-side-group-list-item-info-hidden__wrap"
+            >
+              <span class="overall-side-group-list-item-info-hidden__title">
+                {{ block.title }}
+              </span>
+              <span class="overall-side-group-list-item-info-hidden__info">
+                {{ block.text }}
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -109,7 +120,26 @@ const toggleIsOpened = () => {
   }
 
   &__text {
-    padding-top: 20px;
+    padding-top: $spacing-big;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-x-big;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-x-sm;
+  }
+
+  &__title {
+    font: $l-medium-500;
+    color: $color-light-text-primary;
+  }
+
+  &__info {
+    font: $p-small-400;
+    color: $color-light-text-secondary;
   }
 }
 </style>
