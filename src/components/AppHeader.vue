@@ -93,14 +93,48 @@ onMounted(() => {
   nextTick(() => {
     intersectionObserver.value = new IntersectionObserver(
       (entries) => {
-        const [entry] = entries;
-        const { target: { id } } = entry;
+        entries.forEach((entry) => {
+          entry.target._intersectionHeight = entry.intersectionRect.height;
+        });
+        const mostVisibleEl = intersectingElements.value.reduce((prev, current) => {
+          if (current._intersectionHeight > (prev?._intersectionHeight ?? 0)) {
+            return current;
+          } else {
+            return prev;
+          }
+        }, null);
+        const mostVisibleLink = links.find((el) => el.id === mostVisibleEl.id);
+        const { id } = mostVisibleLink;
         const linkEl = linkRefs.value[id];
         const rect = linkEl.getBoundingClientRect();
         pointer.transform = `translateX(${linkEl.offsetLeft}px)`;
         pointer.width = `${rect.width}px`;
       },
-      { threshold: 0.2 },
+      {
+        threshold: [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          1,
+        ],
+      },
     );
     intersectingElements.value.forEach((el) => {
       intersectionObserver.value.observe(el);

@@ -58,23 +58,18 @@
         View {{ isShowMore ? 'less' : 'more' }}
       </button>
     </div>
-    <div
-      class="biome-page-report-summary"
-      :class="{ 'biome-page-report-summary__opened': isShowMore }"
-    >
-      <div class="biome-page-report-summary-wrapper">
-        We've meticulously processed and analysed the data to generate
-        this report for you and Princess Peach. This report provides
-        you with precise insights, allowing you to make informed
-        adjustments to Princess Peach's daily routine and diet based
-        on scientific evidence rather than guesswork.
-        <br>
-        <br>
-        For further clarification and expert advice, you may book
-        for a consultation with our specialists. We're here to assist
-        you in enhancing your pet's health journey.
-      </div>
-    </div>
+    <span class="biome-page-report-summary">
+      We've meticulously processed and analysed the data to generate
+      this report for you and Princess Peach. This report provides
+      you with precise insights, allowing you to make informed
+      adjustments to Princess Peach's daily routine and diet based
+      on scientific evidence rather than guesswork.
+      <br>
+      <br>
+      For further clarification and expert advice, you may book
+      for a consultation with our specialists. We're here to assist
+      you in enhancing your pet's health journey.
+    </span>
     <div class="biome-page-report-actions">
       <button class="biome-page-report-actions__button biome-page-report-actions__button_read">
         Read full analysis
@@ -175,14 +170,6 @@ const showMoreHandler = () => {
 .biome-page-report-summary {
   color: $color-dark-text-secondary;
   font: $p-medium-400;
-  display: grid;
-  overflow: hidden;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows .3s $tra-cubic;
-
-  &__opened {
-    grid-template-rows: 1fr;
-  }
 }
 
 .biome-page-report-actions {
@@ -229,8 +216,5 @@ const showMoreHandler = () => {
   .biome-page-report-actions__button {
     flex: 1 1 auto;
   }
-}
-.biome-page-report-summary-wrapper {
-  min-height: 0;
 }
 </style>

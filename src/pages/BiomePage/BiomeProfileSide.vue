@@ -10,11 +10,41 @@
         </span>
       </div>
       <div class="biome-profile-summary">
+        <span>
+          Princess Peach's detailed microbiome analysis highlights key areas needing attention,
+          particularly in lipid metabolism and gut balance.
+          <br><br>
+          The overgrowth of E. coli raises concerns for potential small intestinal bacterial overgrowth
+          (SIBO), and deficiencies in Actinobacteriota and Proteobacteria, alongside an
+          imbalance in Bacteroides and Prevotella, may lead to digestive sensitivities.
+          <br><br>
+        </span>
         <div
           class="biome-profile-summary-text"
           :class="{ 'biome-profile-summary-text_opened': isShowMore }"
         >
           <div class="biome-profile-summary-text__wrapper">
+            Princess Peach's detailed microbiome analysis highlights key areas needing attention,
+            particularly in lipid metabolism and gut balance.
+            <br><br>
+            The overgrowth of E. coli raises concerns for potential small intestinal bacterial overgrowth
+            (SIBO), and deficiencies in Actinobacteriota and Proteobacteria, alongside an
+            imbalance in Bacteroides and Prevotella, may lead to digestive sensitivities.
+            <br><br>
+            Princess Peach's detailed microbiome analysis highlights key areas needing attention,
+            particularly in lipid metabolism and gut balance.
+            <br><br>
+            The overgrowth of E. coli raises concerns for potential small intestinal bacterial overgrowth
+            (SIBO), and deficiencies in Actinobacteriota and Proteobacteria, alongside an
+            imbalance in Bacteroides and Prevotella, may lead to digestive sensitivities.
+            <br><br>
+            Princess Peach's detailed microbiome analysis highlights key areas needing attention,
+            particularly in lipid metabolism and gut balance.
+            <br><br>
+            The overgrowth of E. coli raises concerns for potential small intestinal bacterial overgrowth
+            (SIBO), and deficiencies in Actinobacteriota and Proteobacteria, alongside an
+            imbalance in Bacteroides and Prevotella, may lead to digestive sensitivities.
+            <br><br>
             Princess Peach's detailed microbiome analysis highlights key areas needing attention,
             particularly in lipid metabolism and gut balance.
             <br><br>
@@ -111,14 +141,14 @@ const showMoreHandler = () => isShowMore.value = !isShowMore.value;
 }
 
 .biome-profile-summary {
+  color: $color-dark-text-secondary;
+  font: $p-medium-400;
 }
 
 .biome-profile-summary-text {
-  color: $color-dark-text-secondary;
-  font: $p-medium-400;
   display: grid;
   overflow: hidden;
-  grid-template-rows: 0.35fr;
+  grid-template-rows: 0fr;
   transition: grid-template-rows .3s $tra-cubic;
 
   &_opened {
